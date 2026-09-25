@@ -79,3 +79,104 @@ body {
     position: relative;
     z-index: 1;
 }
+
+.collection {
+    padding: 120px 8%;
+    background: #0B090E;
+}
+
+.section-heading {
+    margin-bottom: 60px;
+}
+
+.section-label {
+    color: #B8A0CC;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-size: clamp(40px, 6vw, 80px);
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.section-heading h2 span {
+    color: #B8A0CC;
+}
+
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.collection-card {
+    border-top: 1px solid #32164F;
+    padding-top: 18px;
+}
+
+.piece-image {
+    height: 430px;
+    margin-bottom: 22px;
+    background: linear-gradient(145deg, #32164F, #0D0A12 65%);
+    position: relative;
+    overflow: hidden;
+}
+
+.piece-image::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 280px;
+    background: #4B2375;
+    opacity: 0.28;
+    filter: blur(45px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.piece-two {
+    background: linear-gradient(145deg, #24152F, #0D0A12 70%);
+}
+
+.piece-three {
+    background: linear-gradient(145deg, #18121D, #32164F 70%);
+}
+
+.piece-number {
+    color: #918A96;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.collection-card h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.collection-card > p:last-child {
+    color: #918A96;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    .collection {
+        padding: 90px 6%;
+    }
+
+    .collection-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .piece-image {
+        height: 420px;
+    }
+}
+
+
+
