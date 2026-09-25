@@ -178,5 +178,65 @@ body {
     }
 }
 
+.about {
+    padding: 140px 8%;
+    background: #E8E1EA;
+    color: #0A080D;
+}
+
+.about-label {
+    color: #6F6675;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 80px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 80px;
+    align-items: end;
+}
+
+.about h2 {
+    font-size: clamp(50px, 8vw, 105px);
+    line-height: 0.88;
+    letter-spacing: -5px;
+}
+
+.about h2 span {
+    color: #4B2375;
+}
+
+.about-text {
+    max-width: 400px;
+}
+
+.about-text p {
+    color: #5F5864;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 800px) {
+
+    .about {
+        padding: 100px 6%;
+    }
+
+    .about-label {
+        margin-bottom: 55px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about h2 {
+        letter-spacing: -3px;
+    }
+}
 
 
